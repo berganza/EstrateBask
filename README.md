@@ -1,4 +1,4 @@
 EstrateBask
 ===========
 
-Aplicación para las estrategias de Basket
+Ejercicio en www.desarrolloweb.com para explicar una aplicación que sirva para dibujar estrategias de Basket.
