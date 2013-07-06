@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="canchaBaloncesoNegra.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hzA-Pa-8zk"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DH8-sh-yzg"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTZ-0c-Bm7">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="nnV-SY-KSw"/>
+                                    <constraint firstAttribute="height" constant="86" id="pE8-J2-Y47"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="Red.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lapizRojo:" destination="2" eventType="touchUpInside" id="UiL-Dj-ZaB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BD-n6-rnZ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="AaS-WS-awg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="Eraser.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gomaBorrar:" destination="2" eventType="touchUpInside" id="hDM-gL-C3d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DH8-sh-yzg" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="4Gl-h1-4Le"/>
+                            <constraint firstItem="iTZ-0c-Bm7" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="GSr-El-h0d"/>
+                            <constraint firstItem="hzA-Pa-8zk" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="RLA-7V-zwm"/>
+                            <constraint firstItem="hzA-Pa-8zk" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="RfC-km-0hH"/>
+                            <constraint firstItem="DH8-sh-yzg" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="TBS-ZO-k6R"/>
+                            <constraint firstItem="DH8-sh-yzg" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Yig-ZF-IzR"/>
+                            <constraint firstAttribute="trailing" secondItem="7BD-n6-rnZ" secondAttribute="trailing" constant="11" id="Zmj-00-C3e"/>
+                            <constraint firstItem="7BD-n6-rnZ" firstAttribute="top" secondItem="iTZ-0c-Bm7" secondAttribute="top" type="default" id="cc0-V2-U58"/>
+                            <constraint firstItem="DH8-sh-yzg" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="hIO-oe-59w"/>
+                            <constraint firstItem="hzA-Pa-8zk" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="ldF-YV-cDn"/>
+                            <constraint firstItem="7BD-n6-rnZ" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="pSC-TO-yBU"/>
+                            <constraint firstItem="iTZ-0c-Bm7" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="9" id="pWg-3X-2Ca"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="zonaDibujo" destination="DH8-sh-yzg" id="jwM-Zs-uoV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Eraser.png" width="55" height="167"/>
+        <image name="Red.png" width="53" height="332"/>
+        <image name="canchaBaloncesoNegra.jpg" width="320" height="479"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="gomaBorrar:"/>
+                <relationship kind="action" name="lapizRojo:"/>
+                <relationship kind="outlet" name="zonaDibujo" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
